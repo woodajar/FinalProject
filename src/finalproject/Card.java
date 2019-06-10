@@ -20,9 +20,9 @@ public abstract class Card
     private Value value;
     
     public enum Colour {RED, BLACK};
-    public enum Suit {ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
-    SKIP, REVERSE, DRAWTWO, DRAWFOUR, WILD};
-    public enum Value {RED, YELLOW, GREEN, BLUE};
+    public enum Suit {SPADES, HEARTS, DIAMONDS, CLUBS};
+    public enum Value {ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN,
+    JACK, QUEEN, KING};
         
         public Card (Colour c, Suit s, Value v)
         {
