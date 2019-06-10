@@ -20,6 +20,8 @@ public class GroupOfCards
     //The group of cards, stored in an ArrayList
     private ArrayList <Card> cards;
     private int size;//the size of the grouping
+    private int deckSize = 52;
+    public Card[] deck = new Card[deckSize];
     
     public GroupOfCards(int givenSize)
     {
@@ -51,7 +53,7 @@ public class GroupOfCards
      * @param givenSize the max size for the group of cards
      */
     public void setSize(int givenSize) {
-        size = givenSize;
+        size = 2;
     }
     
 }//end class

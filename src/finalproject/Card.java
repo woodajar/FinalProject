@@ -15,6 +15,57 @@ public abstract class Card
 {
     //default modifier for child classes
     
+    private Colour colour;
+    private Suit suit;
+    private Value value;
+    
+    public enum Colour {RED, BLACK};
+    public enum Suit {ZERO, ONE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE,
+    SKIP, REVERSE, DRAWTWO, DRAWFOUR, WILD};
+    public enum Value {RED, YELLOW, GREEN, BLUE};
+        
+        public Card (Colour c, Suit s, Value v)
+        {
+            colour = c;
+            suit = s;
+            value = v;
+        }
+        
+        public Colour getColour() {
+	return colour;
+	}
+
+	/**
+	 * 
+         * @param colour
+	 */
+	public void setColour(Colour colour) {
+		this.colour = colour;
+	}
+        
+        public Suit getSuit() {
+	return suit;
+	}
+
+	/**
+	 * 
+         * @param suit
+	 */
+	public void setSuit(Suit suit) {
+		this.suit = suit;
+	}
+        
+        public Value getValue() {
+	return value;
+	}
+
+	/**
+	 * 
+         * @param suit
+	 */
+	public void setValue(Value value) {
+		this.value = value;
+	}
     /**
      * Students should implement this method for their specific children classes 
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
